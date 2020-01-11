@@ -12,5 +12,4 @@
 /content/darknet/data/whill/000136.jpg
 /content/darknet/data/whill/000095.jpg
 /content/darknet/data/whill/000134.jpg
-/content/darknet/data/whill/0000164.jpg
 /content/darknet/data/whill/0000142.jpg
