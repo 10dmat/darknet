@@ -1,7 +1,0 @@
-/cotent/darknet/data/whill/000016.jpg
-/cotent/darknet/data/whill/000031.jpg
-/cotent/darknet/data/whill/000051.jpg
-/cotent/darknet/data/whill/000079.jpg
-/cotent/darknet/data/whill/000098.jpg
-/cotent/darknet/data/whill/000113.jpg
-/cotent/darknet/data/whill/000138.jpg
