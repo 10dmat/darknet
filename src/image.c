@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include <math.h>
 
-#include <cstdio>
 #include <windows.h>
 #include <iostream>
 #include <opencv2/core/core.hpp>
