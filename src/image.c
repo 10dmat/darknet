@@ -5,12 +5,22 @@
 #include <stdio.h>
 #include <math.h>
 
+#include <cstdio>
+#include <windows.h>
+#include <iostream>
+#include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2\\opencv.hpp>
+
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
 
 int windows = 0;
+
+int count = 0;
 
 float colors[6][3] = { {1,0,1}, {0,0,1},{0,1,1},{0,1,0},{1,1,0},{1,0,0} };
 
@@ -290,6 +300,15 @@ void draw_detections(image im, detection *dets, int num, float thresh, char **na
             if(top < 0) top = 0;
             if(bot > im.h-1) bot = im.h-1;
             printf("Bounding Box: Left=%d, Top=%d, Right=%d, Bottom=%d\n", left, top, right, bot);
+            
+            Mat aim_img = (a,(left,top,right-left,top-bot));
+            string filename = "content/drive/My\ Drive/aim"+std::to_string(count)+".jpg";
+            imwrite(filename,aim_img);
+            count++;
+            
+            
+            
+            
             draw_box_width(im, left, top, right, bot, width, red, green, blue);
             if (alphabet) {
                 image label = get_label(alphabet, labelstr, (im.h*.03));
